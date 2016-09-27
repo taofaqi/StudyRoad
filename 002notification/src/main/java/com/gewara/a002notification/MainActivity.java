@@ -6,9 +6,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    @OnClick({R.id.btn_normal, R.id.btn_fold, R.id.btn_hang, R.id.btn_clear})
+    @OnClick({R.id.btn_normal, R.id.btn_fold, R.id.btn_hang, R.id.btn_self, R.id.btn_clear})
     public void onClick(View view) {
         //PendingIntent和Intent类似，但不是立即触发。在创建Notification的时候，使用PendingIntent指定在点击通知(下拉条状态)是跳转的Activity。
         //new Intent(Intent.ACTION_VIEW, Uri.parse("http://blog.csdn.net/itachi85/")) 跳转到指定Web页面
@@ -83,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //悬挂式的通知(不行)
             case R.id.btn_hang:
                 mIntent = new Intent(this, MainActivity.class);
-                mPendingIntent = PendingIntent.getActivity(this, 0, mIntent, 0);
+                mPendingIntent = PendingIntent.getActivity(this, 0, mIntent, PendingIntent.FLAG_CANCEL_CURRENT);
                 mBuilder = new Notification.Builder(this);
                 mBuilder.setContentIntent(mPendingIntent);
                 mBuilder.setSmallIcon(R.mipmap.ic_launcher);
@@ -91,26 +89,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mBuilder.setAutoCancel(true);
                 mBuilder.setContentTitle("悬挂式");
                 mBuilder.setContentText("这是悬挂式通知的示例");
-
-                //如果描述的PendingIntent已经存在，则在产生新的Intent之前会先取消掉当前的
-                PendingIntent hangPendingIntent = PendingIntent.getActivity(this, 0, mIntent, PendingIntent.FLAG_CANCEL_CURRENT);
-                mBuilder.setFullScreenIntent(hangPendingIntent, true);
+//
+//                //如果描述的PendingIntent已经存在，则在产生新的Intent之前会先取消掉当前的
+//                PendingIntent hangPendingIntent = PendingIntent.getActivity(this, 0, mIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+                mBuilder.setFullScreenIntent(mPendingIntent, true);
                 mNotificationManager.notify(HANG, mBuilder.build());
                 break;
             case R.id.btn_self:
-                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getApplicationContext());
                 mIntent = new Intent(this, MainActivity.class);
                 mPendingIntent = PendingIntent.getActivity(this, 0, mIntent, 0);
                 mBuilder = new Notification.Builder(this);
                 mBuilder.setContentIntent(mPendingIntent);
-                RemoteViews rv = new RemoteViews(getPackageName(), R.layout.fold_notification);
-                rv.setImageViewBitmap(R.id.btn_icon, BitmapFactory.decodeResource(getResources(), R.mipmap.icon_backorange));
-                mBuilder.setContent(rv);
+                mBuilder.setAutoCancel(false);
 
-                Intent intent = new Intent(this, MainActivity.class);
-                PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent, 0);
-                mBuilder.setContentIntent(contentIntent);
-                managerCompat.notify(SELF, mBuilder.build());
+                mBuilder.setSmallIcon(R.mipmap.ic_launcher);
+                mBuilder.setTicker("TickerText:您有新短消息，请注意查收！");
+                RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.fold_notification);
+                mBuilder.setContent(remoteViews);
+                mNotificationManager.notify(SELF, mBuilder.build());
                 break;
             case R.id.btn_clear:
                 mNotificationManager.cancelAll();

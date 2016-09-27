@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/001toast/001toast.iml" filepath="$PROJECT_DIR$/001toast/001toast.iml" />
       <module fileurl="file://$PROJECT_DIR$/002notification/002notification.iml" filepath="$PROJECT_DIR$/002notification/002notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003sqlite/003sqlite.iml" filepath="$PROJECT_DIR$/003sqlite/003sqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudyRoad.iml" filepath="$PROJECT_DIR$/StudyRoad.iml" />
       <module fileurl="file://$PROJECT_DIR$/001toast/app.iml" filepath="$PROJECT_DIR$/001toast/app.iml" />
     </modules>
