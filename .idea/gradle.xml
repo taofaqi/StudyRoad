@@ -10,12 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/001toast" />
+            <option value="$PROJECT_DIR$/002notification" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/001toast" />
+            <option value="$PROJECT_DIR$/002notification" />
           </set>
         </option>
       </GradleProjectSettings>

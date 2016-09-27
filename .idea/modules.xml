@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/001toast/app.iml" filepath="$PROJECT_DIR$/001toast/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/001toast/001toast.iml" filepath="$PROJECT_DIR$/001toast/001toast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002notification/002notification.iml" filepath="$PROJECT_DIR$/002notification/002notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudyRoad.iml" filepath="$PROJECT_DIR$/StudyRoad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/001toast/app.iml" filepath="$PROJECT_DIR$/001toast/app.iml" />
     </modules>
   </component>
 </project>
