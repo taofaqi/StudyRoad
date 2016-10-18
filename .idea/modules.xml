@@ -5,6 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/001toast/001toast.iml" filepath="$PROJECT_DIR$/001toast/001toast.iml" />
       <module fileurl="file://$PROJECT_DIR$/002notification/002notification.iml" filepath="$PROJECT_DIR$/002notification/002notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/003sqlite/003sqlite.iml" filepath="$PROJECT_DIR$/003sqlite/003sqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/004broadcastreceiver/004broadcastreceiver.iml" filepath="$PROJECT_DIR$/004broadcastreceiver/004broadcastreceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/005handler/005handler.iml" filepath="$PROJECT_DIR$/005handler/005handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/006customview/006customview.iml" filepath="$PROJECT_DIR$/006customview/006customview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/006service/006service.iml" filepath="$PROJECT_DIR$/006service/006service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/007webview/007webview.iml" filepath="$PROJECT_DIR$/007webview/007webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/008statusbar/008statusbar.iml" filepath="$PROJECT_DIR$/008statusbar/008statusbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/009weight/009weight.iml" filepath="$PROJECT_DIR$/009weight/009weight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/010customview/010customview.iml" filepath="$PROJECT_DIR$/010customview/010customview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/011livestreaming/011livestreaming.iml" filepath="$PROJECT_DIR$/011livestreaming/011livestreaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudyRoad.iml" filepath="$PROJECT_DIR$/StudyRoad.iml" />
       <module fileurl="file://$PROJECT_DIR$/001toast/app.iml" filepath="$PROJECT_DIR$/001toast/app.iml" />
     </modules>

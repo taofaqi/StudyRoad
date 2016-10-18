@@ -12,6 +12,15 @@
             <option value="$PROJECT_DIR$/001toast" />
             <option value="$PROJECT_DIR$/002notification" />
             <option value="$PROJECT_DIR$/003sqlite" />
+            <option value="$PROJECT_DIR$/004broadcastreceiver" />
+            <option value="$PROJECT_DIR$/005handler" />
+            <option value="$PROJECT_DIR$/006customview" />
+            <option value="$PROJECT_DIR$/006service" />
+            <option value="$PROJECT_DIR$/007webview" />
+            <option value="$PROJECT_DIR$/008statusbar" />
+            <option value="$PROJECT_DIR$/009weight" />
+            <option value="$PROJECT_DIR$/010customview" />
+            <option value="$PROJECT_DIR$/011livestreaming" />
           </set>
         </option>
         <option name="myModules">
@@ -20,6 +29,15 @@
             <option value="$PROJECT_DIR$/001toast" />
             <option value="$PROJECT_DIR$/002notification" />
             <option value="$PROJECT_DIR$/003sqlite" />
+            <option value="$PROJECT_DIR$/004broadcastreceiver" />
+            <option value="$PROJECT_DIR$/005handler" />
+            <option value="$PROJECT_DIR$/006customview" />
+            <option value="$PROJECT_DIR$/006service" />
+            <option value="$PROJECT_DIR$/007webview" />
+            <option value="$PROJECT_DIR$/008statusbar" />
+            <option value="$PROJECT_DIR$/009weight" />
+            <option value="$PROJECT_DIR$/010customview" />
+            <option value="$PROJECT_DIR$/011livestreaming" />
           </set>
         </option>
       </GradleProjectSettings>
